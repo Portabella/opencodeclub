@@ -1,0 +1,203 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+
+    color: #282f3f;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.wrapper {
+    /*unsichtbarer Rahmen um Logo und Navbar; soll sich immer 
+    mittig ausrichten und soll immer 90% betragen > responsive*/
+    width: 960px;
+    /*damit das ganze responsive bleibt*/
+    max-width: 90%;
+
+    margin: 0 auto;
+}
+
+#borderdesign {
+    /*Design oben > grüner Balken*/
+    border: solid rgba(118,184,42,0.8) 4px;
+}
+
+.double_underline {
+  border-bottom: double 3px #000000;
+}
+
+.frame {
+    /*Rahmen um Text*/
+    border: white 1px solid;
+    padding: 10px;
+    color: white;
+}
+
+/* HEADER */
+
+#navigation {
+    /*gibt an, dass sich die Position der Navigation verankern soll und top: 0 gibt an, dass es sich oben verankern soll*/
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: rgba(250, 250, 250, 0.8);
+
+    background-color: rgba(30,30,30, 0.9);
+}
+
+#logo {
+    width: 250px;
+    height: 50px;
+
+    float: left;
+}
+
+#logo p {
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    font-weight: lighter;
+}
+
+#logo a{
+    text-decoration: none;
+    color: white;
+    color: #76b72a;
+}
+
+#navbar {
+    float: right;
+    margin-top: 20px;
+    color: rgb(210,210,210);
+    font-weight: lighter;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(210,210,210);
+    color: #76b72a;
+
+}
+
+ul{
+    margin-left: 50px;
+}
+
+/* BANNER */
+
+#banner {
+    width: 100%;
+    height: 520px;
+    z-index: 0;
+
+    background: url(../images/background.jpeg);
+    background-size: cover;
+    text-align: center;
+}
+
+#banner h1 {
+    padding-top:150px;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+#banner h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+
+}
+
+.regbutton {
+    background-color: #76b72a; /* Green */
+    border: solid 2px #76b72a;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+}
+.regbutton:hover {
+    background-color: white; /* Green */
+    border: solid 2px rgb(118,184,42);
+    color: black;
+}
+
+/* CONTENT */
+
+#content {
+    margin-top: 20px; 
+
+    width: 100%;
+}
+
+
+/*FOOTER*/
+
+#slogan-container {
+    background: rgba(118,184,42,0.8);
+    width: 100%;
+    text-align: center;
+
+}
+
+#slogan p {
+    font-size: 1em;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+#slogan p span {
+    display: block;
+    font-weight: 700;
+}
+
+#copyright-container {
+    padding: 15px;
+    background: #282f3f;
+}
+
+#copyright-container span{
+    margin-left: 50px;
+
+    color: white;
+    font-size: 0.7em;
+}
+
+#copyright-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 10px;
+    width: 220px;
+}
+
+.gallery-item .thumbnail {
+    border: 5px solid #fff;
+    width: 100%;
+    height: 100%; 
+}
+
